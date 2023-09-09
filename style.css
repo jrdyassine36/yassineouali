@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;}
+header{
+    
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px 100px;
+    
+}
+.logo{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #3a6cf4;
+    font-weight: 500;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #3a6cf4;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+.navigation a:hover{
+    color: #d400ff;
+}
+section{
+    
+    padding:  150px 100px;
+}
+#main{
+    display: flex;
+    
+   justify-content: space-between;
+}
+.me{
+    width: 270px;
+    border-radius: 37px;
+    margin-top: -70px;
+    transition: 0.5s ease;
+}
+.me:hover{
+   background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%, #2e99e8 100%);
+    transform: skew(-5deg, -8deg);
+}
+.text{
+    margin-top: 40px;
+}
+.text h2{
+    font-weight: 500;
+}
+h2 span{
+    color: #00e1ff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.text h3{
+    font-weight: 500;
+    margin-top: 10px;
+    
+    margin-bottom: 10px;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+.social-media a ion-icon{
+    transition: 0.5s ease;
+    color: #000000;
+    font-weight: 700;
+}
+.social-media a ion-icon:hover{
+    color: #d400ff;
+    transform: scale(1.5);
+}
+#project{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#project h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .img-pr{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .img-pr img{
+        width: 650px;
+        border: #d400ff 2px solid;
+        border-radius: 29px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        transition: 0.5s ease;
+        filter: blur(3px);
+    }
+    .img-pr img:hover{
+        transform: scale(1.1);
+        filter: blur(0px); 
+        
+    }
+#cantact{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 1px;
+    padding: 200px;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 66px 69px;
+    font-size: 1.6rem;  
+    border-right: 3px solid  ;
+    font-weight: 600;
+    color: #d400ff;
+
+}
+form h2 {
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-right: 40px;
+}
+.msg{
+    padding: 47px;
+    border-radius:24px;
+}
+.btnsub{
+    width: 120px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ff00f2c2;
+    padding:8px;
+    margin-left: 15px;
+    border: 2px solid #ff00f2c2;
+    border-radius:30px;
+}
+.btnsub ion-icon{
+    font-size: 24px;
+}
+form input{
+    width: 300px;
+    padding: 8px 16px;
+    border-color: black;
+    border-radius: 50px;
+}
+.info{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info h2{
+    color: #d400ff;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info h3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+ }
+ .info h3 ion-icon{
+    font-size: 30px;
+    font-weight: 700;
+ }
+
+@media (max-width: 968px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-pr img{
+        width: 400px;
+    }
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .me {
+    margin-top: 50px;
+    }
+    #cantact{
+        flex-direction: column;
+    }
+    form{
+    display: flex;
+    align-items: center;
+    border-right: transparent;
+    border-bottom: 2px solid #d400ff;
+            }
+    .info {
+    gap: 20px;
+    bottom: 0;
+    margin-bottom: -10;
+    }     
+    .info .social-media{
+    display: flex;
+    }
+    .info h2{
+        
+    }
+
+
+}
